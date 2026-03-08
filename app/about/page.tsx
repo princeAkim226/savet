@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div>
           <h1 className="text-4xl font-bold mb-6">À Propos de SAVET Burkina</h1>
           <p className="text-gray-600 mb-6">
-            SAVET Burkina, sous la direction du Dr Abdoul Aziz TIAMA, est un acteur majeur 
+            SAVET Burkina est un acteur majeur 
             dans le domaine de la santé et de la nutrition animale au Burkina Faso. Notre 
             mission est d'améliorer la santé et le bien-être des animaux à travers des 
             solutions innovantes et un service personnalisé.
