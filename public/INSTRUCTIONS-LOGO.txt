@@ -1,0 +1,51 @@
+═══════════════════════════════════════════════════════════════
+  INSTRUCTIONS POUR AJOUTER LE LOGO SAVET
+═══════════════════════════════════════════════════════════════
+
+ÉTAPE 1 : Sauvegarder l'image du logo
+───────────────────────────────────────
+1. Faites un clic droit sur l'image du logo SAVET
+2. Sélectionnez "Enregistrer l'image sous..." ou "Save image as..."
+3. Choisissez un emplacement temporaire sur votre ordinateur
+
+ÉTAPE 2 : Renommer le fichier
+────────────────────────────────
+1. Renommez le fichier en : logo-savet.png
+   (Si c'est un SVG, renommez en : logo-savet.svg)
+   (Si c'est un JPG, renommez en : logo-savet.jpg)
+
+ÉTAPE 3 : Placer le fichier dans le dossier public
+────────────────────────────────────────────────────
+1. Ouvrez le dossier de votre projet
+2. Allez dans le dossier : public/
+3. Copiez le fichier logo-savet.png dans ce dossier
+
+STRUCTURE FINALE :
+──────────────────
+savet-burkina-main/
+  └── public/
+      ├── logo-savet.png  ← Votre logo doit être ici
+      ├── README-LOGO.md
+      └── INSTRUCTIONS-LOGO.txt (ce fichier)
+
+ÉTAPE 4 : Vérifier
+──────────────────
+1. Le fichier doit s'appeler exactement : logo-savet.png
+2. Il doit être dans le dossier : public/
+3. Redémarrez le serveur de développement (npm run dev)
+4. Le logo devrait maintenant s'afficher dans le header et le footer
+
+FORMATS ACCEPTÉS :
+──────────────────
+✓ logo-savet.png  (recommandé)
+✓ logo-savet.svg  (meilleure qualité)
+✓ logo-savet.jpg  ou logo-savet.jpeg
+✓ logo-savet.webp
+
+SI VOUS UTILISEZ UN AUTRE NOM OU FORMAT :
+─────────────────────────────────────────
+Modifiez le fichier : components/logo.tsx
+Ligne 30 : Changez "/logo-savet.png" par votre nom de fichier
+
+═══════════════════════════════════════════════════════════════
+

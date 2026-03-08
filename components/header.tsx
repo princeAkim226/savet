@@ -2,20 +2,24 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, Leaf } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Logo } from '@/components/logo'
+import { useLanguage } from '@/contexts/language-context'
+import { LanguageSelector } from '@/components/language-selector'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const { t } = useLanguage()
 
   const navigation = [
-    { name: 'Accueil', href: '/' },
-    { name: 'Nos Solutions', href: '/produits' },
-    { name: 'Services', href: '/services' },
-    { name: 'Actualités', href: '/actualites' },
-    { name: 'Nos Partenaires', href: '/partenaires' },
-    { name: 'À Propos', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { key: 'nav.home', href: '/' },
+    { key: 'nav.services', href: '/services' },
+    { key: 'nav.solutions', href: '/produits' },
+    { key: 'nav.campaign', href: '/actualites' },
+    { key: 'nav.partners', href: '/partenaires' },
+    { key: 'nav.about', href: '/about' },
+    { key: 'nav.contact', href: '/contact' },
   ]
 
   return (
@@ -23,23 +27,25 @@ const Header = () => {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <Leaf className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold text-primary">SAVET Burkina</span>
+            <Link href="/" className="flex items-center space-x-3">
+              <Logo width={120} height={40} className="h-10 w-auto object-contain" showText={true} />
             </Link>
           </div>
 
           <div className="hidden md:flex md:items-center md:space-x-6">
             {navigation.map((item) => (
               <Link
-                key={item.name}
+                key={item.key}
                 href={item.href}
                 className="text-sm font-medium text-gray-700 hover:text-primary transition-colors"
               >
-                {item.name}
+                {t(item.key)}
               </Link>
             ))}
-            <Button>Nous Contacter</Button>
+            <LanguageSelector />
+            <Button asChild>
+              <Link href="/contact">{t('nav.contactUs')}</Link>
+            </Button>
           </div>
 
           <div className="flex md:hidden">
@@ -63,16 +69,19 @@ const Header = () => {
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Link
-                  key={item.name}
+                  key={item.key}
                   href={item.href}
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-primary/10 hover:text-primary transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.name}
+                  {t(item.key)}
                 </Link>
               ))}
-              <div className="mt-4">
-                <Button className="w-full">Nous Contacter</Button>
+              <div className="mt-4 flex flex-col gap-2">
+                <LanguageSelector />
+                <Button className="w-full" asChild>
+                  <Link href="/contact">{t('nav.contactUs')}</Link>
+                </Button>
               </div>
             </div>
           </div>

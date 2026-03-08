@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/sections/hero-section"
 import { Card, CardContent } from "@/components/ui/card"
-import { Stethoscope, Leaf, Heart, Clock, Shield, Users } from "lucide-react"
+import { Stethoscope, Leaf, Heart, Clock, Users } from "lucide-react"
 
 const services = [
   {
@@ -22,11 +22,6 @@ const services = [
     icon: <Clock className="h-12 w-12" />,
     title: "Disponibilité",
     description: "Une équipe disponible pour répondre à vos besoins et urgences."
-  },
-  {
-    icon: <Shield className="h-12 w-12" />,
-    title: "Qualité Garantie",
-    description: "Des produits et services répondant aux plus hauts standards de qualité."
   },
   {
     icon: <Users className="h-12 w-12" />,

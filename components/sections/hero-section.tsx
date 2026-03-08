@@ -6,8 +6,8 @@ export function HeroSection() {
   return (
     <section className="relative h-[400px]">
       <Image
-        src="https://images.unsplash.com/photo-1615812214207-34e3be6812df?ixlib=rb-4.0.3"
-        alt="SAVET Burkina Services"
+        src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+        alt="Animaux du Sahel - Bovins et berger"
         fill
         className="object-cover"
         priority

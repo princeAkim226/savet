@@ -1,33 +1,38 @@
-import { Mail, MapPin, Phone, Leaf, Facebook, Instagram, Twitter } from 'lucide-react'
+"use client"
+
+import { Mail, MapPin, Phone, Facebook, Instagram, Twitter } from 'lucide-react'
 import Link from 'next/link'
+import { Logo } from '@/components/logo'
+import { useLanguage } from '@/contexts/language-context'
 
 const Footer = () => {
+  const { t } = useLanguage()
+
   return (
     <footer className="bg-primary/10">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Leaf className="h-6 w-6 text-primary" />
-              <h3 className="text-lg font-semibold text-primary">SAVET Burkina</h3>
-            </div>
+            <Link href="/" className="flex items-center mb-4">
+              <Logo width={140} height={50} className="h-12 w-auto object-contain" showText={true} />
+            </Link>
             <p className="text-gray-600">
-              Votre partenaire en santé, nutrition et bien-être animal au Burkina Faso
+              {t("footer.tagline")}
             </p>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-primary">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4 text-primary">{t("footer.contact")}</h3>
             <ul className="space-y-3 text-gray-600">
               <li className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-primary" />
                 <a
-                  href="https://www.google.com/maps/search/savet+sas+burkina+faso/@11.8105431,-4.1861025,8z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEwMi4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/search/BP+244+Bobo-Dioulasso+90000+Burkina+Faso/@11.1771,-4.2973,13z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
                 >
-                  01 B.P. 363, Bobo-Dioulasso 01, BURKINA FASO
+                  BP 244, Bobo-Dioulasso 90000, BURKINA FASO
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -46,13 +51,13 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-primary">Liens Rapides</h3>
+            <h3 className="text-lg font-semibold mb-4 text-primary">{t("footer.quickLinks")}</h3>
             <ul className="space-y-3">
               {[
-                ['Nos Produits', '/produits'],
-                ['Nos Services', '/services'],
-                ['À Propos', '/about'],
-                ['Contact', '/contact']
+                [t("nav.solutions"), '/produits'],
+                [t("nav.services"), '/services'],
+                [t("nav.about"), '/about'],
+                [t("nav.contact"), '/contact']
               ].map(([title, url]) => (
                 <li key={url}>
                   <Link 
@@ -67,7 +72,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-primary">Suivez-nous</h3>
+            <h3 className="text-lg font-semibold mb-4 text-primary">{t("footer.followUs")}</h3>
             <div className="flex space-x-4">
               <a
                 href="https://facebook.com/savetburkina"
@@ -101,7 +106,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 border-t border-primary/20 pt-8 text-center text-gray-600">
-          <p>&copy; {new Date().getFullYear()} SAVET Burkina. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} SAVET Burkina. {t("footer.rights")}.</p>
         </div>
       </div>
     </footer>

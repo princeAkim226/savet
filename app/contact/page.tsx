@@ -15,12 +15,12 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold">Adresse</h3>
                 <a
-                  href="https://www.google.com/maps/search/savet+sas+burkina+faso/@11.8105431,-4.1861025,8z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MTEwMi4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/search/BP+244+Bobo-Dioulasso+90000+Burkina+Faso/@11.1771,-4.2973,13z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-primary underline underline-offset-2"
                 >
-                  01 B.P. 363, Bobo-Dioulasso 01, BURKINA FASO
+                  BP 244, Bobo-Dioulasso 90000, BURKINA FASO
                 </a>
               </div>
             </div>

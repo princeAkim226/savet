@@ -40,8 +40,8 @@ export default function AboutPage() {
         </div>
         <div className="relative h-[400px]">
           <Image
-            src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?ixlib=rb-4.0.3"
-            alt="SAVET Burkina"
+            src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Animaux du Sahel - Bovins et berger"
             fill
             className="object-cover rounded-lg"
           />
