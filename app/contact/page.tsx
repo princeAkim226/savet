@@ -20,7 +20,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-primary underline underline-offset-2"
                 >
-                  BP 244, Bobo-Dioulasso 90000, BURKINA FASO
+                  BP 244 - Bobo-Dioulasso 90000 - BURKINA FASO
                 </a>
               </div>
             </div>

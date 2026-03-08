@@ -17,6 +17,7 @@ const Header = () => {
     { key: 'nav.services', href: '/services' },
     { key: 'nav.solutions', href: '/produits' },
     { key: 'nav.campaign', href: '/actualites' },
+    { key: 'nav.clientArea', href: '/espace-client' },
     { key: 'nav.partners', href: '/partenaires' },
     { key: 'nav.about', href: '/about' },
     { key: 'nav.contact', href: '/contact' },
@@ -32,17 +33,23 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex md:items-center md:space-x-6">
+          <div className="hidden md:flex md:items-center md:space-x-5 md:flex-nowrap">
             {navigation.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
-                className="text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+                className="text-sm font-medium text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
               >
                 {t(item.key)}
               </Link>
             ))}
             <LanguageSelector />
+            <Link
+              href="/inscription"
+              className="text-sm font-medium text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
+            >
+              {t('nav.createAccount')}
+            </Link>
             <Button asChild>
               <Link href="/contact">{t('nav.contactUs')}</Link>
             </Button>
@@ -79,6 +86,13 @@ const Header = () => {
               ))}
               <div className="mt-4 flex flex-col gap-2">
                 <LanguageSelector />
+                <Link
+                  href="/inscription"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-primary/10 hover:text-primary"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {t('nav.createAccount')}
+                </Link>
                 <Button className="w-full" asChild>
                   <Link href="/contact">{t('nav.contactUs')}</Link>
                 </Button>

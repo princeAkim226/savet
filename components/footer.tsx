@@ -32,7 +32,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
                 >
-                  BP 244, Bobo-Dioulasso 90000, BURKINA FASO
+                  BP 244 - Bobo-Dioulasso 90000 - BURKINA FASO
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -56,8 +56,10 @@ const Footer = () => {
               {[
                 [t("nav.solutions"), '/produits'],
                 [t("nav.services"), '/services'],
+                [t("nav.clientArea"), '/espace-client'],
                 [t("nav.about"), '/about'],
-                [t("nav.contact"), '/contact']
+                [t("nav.contact"), '/contact'],
+                [t("nav.createAccount"), '/inscription']
               ].map(([title, url]) => (
                 <li key={url}>
                   <Link 

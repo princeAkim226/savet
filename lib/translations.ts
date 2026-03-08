@@ -5,11 +5,13 @@ export const translations = {
     // Navigation
     nav: {
       home: 'Accueil',
-      solutions: 'Nos Solutions',
+      solutions: 'Solutions',
       services: 'Services',
-      campaign: 'Campagne',
-      partners: 'Nos Partenaires',
-      about: 'À Propos',
+      campaign: 'Actualités',
+      clientArea: 'Espace client',
+      createAccount: 'Inscription',
+      partners: 'Partenaires',
+      about: 'À propos',
       contact: 'Contact',
       contactUs: 'Nous Contacter',
     },
@@ -104,6 +106,32 @@ export const translations = {
       phone: 'Téléphone',
       sendMessage: 'Envoyez-nous un message',
     },
+    // Espace client
+    clientArea: {
+      title: 'Espace client',
+      subtitle: 'Fiches techniques, vidéos, formations et espace personnalisé',
+      technicalSheets: 'Fiches techniques',
+      technicalSheetsDesc: 'Téléchargez les fiches techniques de nos produits.',
+      videos: 'Vidéos',
+      videosDesc: 'Vidéos de présentation et tutoriels.',
+      training: 'Formations',
+      trainingDesc: 'Formations en santé et nutrition animale.',
+      personalizedSpace: 'Espace personnalisé',
+      personalizedSpaceDesc: 'Accédez à votre espace dédié après connexion.',
+      loginRequired: 'Connectez-vous ou créez un compte pour accéder à ces ressources.',
+    },
+    // Inscription
+    register: {
+      title: 'Créer un compte',
+      subtitle: 'Demande de création de compte. Votre accès sera activé par notre équipe.',
+      name: 'Nom complet',
+      email: 'Email',
+      phone: 'Téléphone',
+      company: 'Entreprise / Élevage',
+      message: 'Message (optionnel)',
+      submit: 'Demander la création de compte',
+      success: 'Votre demande a été envoyée. Nous vous contacterons pour activer votre accès.',
+    },
     // Footer
     footer: {
       tagline: 'Votre partenaire en santé, nutrition et bien-être animal au Burkina Faso',
@@ -117,10 +145,12 @@ export const translations = {
     // Navigation
     nav: {
       home: 'Home',
-      solutions: 'Our Solutions',
+      solutions: 'Solutions',
       services: 'Services',
-      campaign: 'Campaign',
-      partners: 'Our Partners',
+      campaign: 'News',
+      clientArea: 'Client area',
+      createAccount: 'Register',
+      partners: 'Partners',
       about: 'About',
       contact: 'Contact',
       contactUs: 'Contact Us',
@@ -215,6 +245,32 @@ export const translations = {
       email: 'Email',
       phone: 'Phone',
       sendMessage: 'Send us a message',
+    },
+    // Espace client
+    clientArea: {
+      title: 'Client area',
+      subtitle: 'Technical sheets, videos, training and personalized space',
+      technicalSheets: 'Technical sheets',
+      technicalSheetsDesc: 'Download technical data sheets for our products.',
+      videos: 'Videos',
+      videosDesc: 'Product videos and tutorials.',
+      training: 'Training',
+      trainingDesc: 'Training in animal health and nutrition.',
+      personalizedSpace: 'Personalized space',
+      personalizedSpaceDesc: 'Access your dedicated space after logging in.',
+      loginRequired: 'Log in or create an account to access these resources.',
+    },
+    // Inscription
+    register: {
+      title: 'Create account',
+      subtitle: 'Account creation request. Your access will be activated by our team.',
+      name: 'Full name',
+      email: 'Email',
+      phone: 'Phone',
+      company: 'Company / Farm',
+      message: 'Message (optional)',
+      submit: 'Request account creation',
+      success: 'Your request has been sent. We will contact you to activate your access.',
     },
     // Footer
     footer: {
