@@ -7,7 +7,7 @@ const campaigns = [
   {
     title: "Campagne de vaccination animale 2025",
     date: "01/11/2025",
-    content: "SAVET Burkina lance une grande campagne de vaccination destinée à toutes les espèces animales domestiques sur l'ensemble du territoire.",
+    content: "SAVET SAS lance une grande campagne de vaccination destinée à toutes les espèces animales domestiques sur l'ensemble du territoire.",
   },
   {
     title: "Nouveau partenariat nutrition animale",

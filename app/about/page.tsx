@@ -25,9 +25,9 @@ export default function AboutPage() {
     <div className="max-w-7xl mx-auto px-4 py-12">
       <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
         <div>
-          <h1 className="text-4xl font-bold mb-6">À Propos de SAVET Burkina</h1>
+          <h1 className="text-4xl font-bold mb-6">À Propos de SAVET SAS</h1>
           <p className="text-gray-600 mb-6">
-            SAVET Burkina est un acteur majeur 
+            SAVET SAS est un acteur majeur 
             dans le domaine de la santé et de la nutrition animale au Burkina Faso. Notre 
             mission est d'améliorer la santé et le bien-être des animaux à travers des 
             solutions innovantes et un service personnalisé.

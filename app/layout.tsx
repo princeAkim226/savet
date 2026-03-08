@@ -9,8 +9,8 @@ import Footer from '@/components/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'SAVET Burkina - Santé et Nutrition Animale',
-  description: 'SAVET Burkina - Votre partenaire en santé, nutrition et bien-être animal au Burkina Faso',
+  title: 'SAVET SAS - Santé et Nutrition Animale',
+  description: 'SAVET SAS - Votre partenaire en santé, nutrition et bien-être animal au Burkina Faso',
   icons: {
     icon: '/logo-savet.png',
     shortcut: '/logo-savet.png',

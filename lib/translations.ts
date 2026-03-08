@@ -15,7 +15,7 @@ export const translations = {
     },
     // Home page
     home: {
-      title: 'SAVET Burkina',
+      title: 'SAVET SAS',
       subtitle: 'Votre partenaire de confiance en santé, nutrition et bien-être animal au Burkina Faso',
       ourProducts: 'Nos Produits',
       contactUs: 'Nous Contacter',
@@ -27,7 +27,7 @@ export const translations = {
       assistance: 'Assistance & Conseils',
       assistanceDesc: 'Expertise professionnelle et conseils personnalisés pour le bien-être de vos animaux.',
       aboutTitle: 'À Propos de SAVET',
-      aboutText: 'SAVET Burkina est votre partenaire de confiance en matière de santé et de nutrition animale. Notre engagement envers l\'excellence et notre expertise approfondie nous permettent de fournir des solutions complètes pour le bien-être de vos animaux.',
+      aboutText: 'SAVET SAS est votre partenaire de confiance en matière de santé et de nutrition animale. Notre engagement envers l\'excellence et notre expertise approfondie nous permettent de fournir des solutions complètes pour le bien-être de vos animaux.',
       learnMore: 'En Savoir Plus',
     },
     // Services
@@ -84,8 +84,8 @@ export const translations = {
     },
     // About
     about: {
-      title: 'À Propos de SAVET Burkina',
-      description1: 'SAVET Burkina est un acteur majeur dans le domaine de la santé et de la nutrition animale au Burkina Faso. Notre mission est d\'améliorer la santé et le bien-être des animaux à travers des solutions innovantes et un service personnalisé.',
+      title: 'À Propos de SAVET SAS',
+      description1: 'SAVET SAS est un acteur majeur dans le domaine de la santé et de la nutrition animale au Burkina Faso. Notre mission est d\'améliorer la santé et le bien-être des animaux à travers des solutions innovantes et un service personnalisé.',
       description2: 'Avec une expertise approfondie et un engagement constant envers l\'excellence, nous accompagnons nos clients dans tous leurs besoins en matière de santé animale, de la prévention aux soins, en passant par la nutrition.',
       values: 'Nos Valeurs',
       excellence: 'Excellence',
@@ -127,7 +127,7 @@ export const translations = {
     },
     // Home page
     home: {
-      title: 'SAVET Burkina',
+      title: 'SAVET SAS',
       subtitle: 'Your trusted partner in animal health, nutrition and welfare in Burkina Faso',
       ourProducts: 'Our Products',
       contactUs: 'Contact Us',
@@ -139,7 +139,7 @@ export const translations = {
       assistance: 'Assistance & Advice',
       assistanceDesc: 'Professional expertise and personalized advice for the well-being of your animals.',
       aboutTitle: 'About SAVET',
-      aboutText: 'SAVET Burkina is your trusted partner in animal health and nutrition. Our commitment to excellence and our in-depth expertise enable us to provide comprehensive solutions for the well-being of your animals.',
+      aboutText: 'SAVET SAS is your trusted partner in animal health and nutrition. Our commitment to excellence and our in-depth expertise enable us to provide comprehensive solutions for the well-being of your animals.',
       learnMore: 'Learn More',
     },
     // Services
@@ -196,8 +196,8 @@ export const translations = {
     },
     // About
     about: {
-      title: 'About SAVET Burkina',
-      description1: 'SAVET Burkina is a major player in animal health and nutrition in Burkina Faso. Our mission is to improve the health and well-being of animals through innovative solutions and personalized service.',
+      title: 'About SAVET SAS',
+      description1: 'SAVET SAS is a major player in animal health and nutrition in Burkina Faso. Our mission is to improve the health and well-being of animals through innovative solutions and personalized service.',
       description2: 'With in-depth expertise and a constant commitment to excellence, we support our clients in all their animal health needs, from prevention to care, including nutrition.',
       values: 'Our Values',
       excellence: 'Excellence',
