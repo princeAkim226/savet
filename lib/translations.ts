@@ -10,6 +10,7 @@ export const translations = {
       campaign: 'Actualités',
       clientArea: 'Espace client',
       createAccount: 'Inscription',
+      login: 'Connexion',
       partners: 'Partenaires',
       about: 'À propos',
       contact: 'Contact',
@@ -131,6 +132,25 @@ export const translations = {
       message: 'Message (optionnel)',
       submit: 'Demander la création de compte',
       success: 'Votre demande a été envoyée. Nous vous contacterons pour activer votre accès.',
+      error: 'Une erreur est survenue. Veuillez réessayer.',
+    },
+    // Connexion
+    login: {
+      title: 'Connexion',
+      subtitle: 'Accédez à votre espace client',
+      email: 'Email',
+      password: 'Mot de passe',
+      submit: 'Se connecter',
+      noAccount: 'Pas encore de compte ?',
+      requestAccount: 'Demander la création de compte',
+      error: 'Email ou mot de passe incorrect.',
+    },
+    // Espace client (connecté)
+    clientAreaLogged: {
+      welcome: 'Bienvenue',
+      logout: 'Déconnexion',
+      downloadFiche: 'Télécharger',
+      noFile: 'Aucun document pour le moment.',
     },
     // Footer
     footer: {
@@ -150,6 +170,7 @@ export const translations = {
       campaign: 'News',
       clientArea: 'Client area',
       createAccount: 'Register',
+      login: 'Log in',
       partners: 'Partners',
       about: 'About',
       contact: 'Contact',
@@ -271,6 +292,25 @@ export const translations = {
       message: 'Message (optional)',
       submit: 'Request account creation',
       success: 'Your request has been sent. We will contact you to activate your access.',
+      error: 'An error occurred. Please try again.',
+    },
+    // Connexion
+    login: {
+      title: 'Log in',
+      subtitle: 'Access your client area',
+      email: 'Email',
+      password: 'Password',
+      submit: 'Log in',
+      noAccount: 'No account yet?',
+      requestAccount: 'Request account creation',
+      error: 'Incorrect email or password.',
+    },
+    // Espace client (connecté)
+    clientAreaLogged: {
+      welcome: 'Welcome',
+      logout: 'Log out',
+      downloadFiche: 'Download',
+      noFile: 'No documents yet.',
     },
     // Footer
     footer: {

@@ -27,6 +27,10 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# données espace client (inscriptions + utilisateurs)
+/data/registrations.json
+/data/users.json
+
 # vercel
 .vercel
 

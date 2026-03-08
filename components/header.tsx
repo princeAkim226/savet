@@ -45,6 +45,12 @@ const Header = () => {
             ))}
             <LanguageSelector />
             <Link
+              href="/connexion"
+              className="text-sm font-medium text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
+            >
+              {t('nav.login')}
+            </Link>
+            <Link
               href="/inscription"
               className="text-sm font-medium text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
             >
@@ -86,6 +92,13 @@ const Header = () => {
               ))}
               <div className="mt-4 flex flex-col gap-2">
                 <LanguageSelector />
+                <Link
+                  href="/connexion"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-primary/10 hover:text-primary"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {t('nav.login')}
+                </Link>
                 <Link
                   href="/inscription"
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-primary/10 hover:text-primary"

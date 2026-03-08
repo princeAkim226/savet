@@ -12,13 +12,33 @@ export default function InscriptionPage() {
   const { t } = useLanguage()
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState("")
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
-    // Simuler envoi (à brancher sur votre API / email plus tard)
-    await new Promise((r) => setTimeout(r, 800))
-    setSubmitted(true)
+    const form = e.currentTarget
+    const payload = {
+      name: (form.querySelector('[name="name"]') as HTMLInputElement)?.value,
+      email: (form.querySelector('[name="email"]') as HTMLInputElement)?.value,
+      phone: (form.querySelector('[name="phone"]') as HTMLInputElement)?.value || undefined,
+      company: (form.querySelector('[name="company"]') as HTMLInputElement)?.value || undefined,
+      message: (form.querySelector('[name="message"]') as HTMLTextAreaElement)?.value || undefined,
+    }
+    try {
+      const res = await fetch('/api/inscription', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.error || 'Erreur')
+      }
+      setSubmitted(true)
+    } catch {
+      setError(t('register.error'))
+    }
     setLoading(false)
   }
 
@@ -46,6 +66,9 @@ export default function InscriptionPage() {
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
+            {error && (
+              <p className="text-sm text-red-600 bg-red-50 p-3 rounded-md">{error}</p>
+            )}
             <div className="space-y-2">
               <Label htmlFor="name">{t('register.name')}</Label>
               <Input id="name" name="name" required placeholder="Jean Dupont" />
